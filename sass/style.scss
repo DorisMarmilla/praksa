@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: block;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1 {
+        background-color: #d9d9d9;
+        height: 75px;
+    }
+    ul {
+        li {
+            color: rgba(136, 135, 135, 1);
+            list-style: none;
+            display: inline;
+        }
+    }
+}
