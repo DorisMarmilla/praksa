@@ -76,6 +76,7 @@ body {
         justify-content: space-around;
         margin-left: 104px;
         margin-right: 104px;
+
         li {
             color: wheat;
             border-left: 1px solid grey;
@@ -84,6 +85,7 @@ body {
             padding-left: 40px;
             a {
                 color: #595959;
+                text-decoration-line: none;
             }
             span {
                 display: block;
@@ -91,9 +93,6 @@ body {
                 padding-bottom: 8px;
                 color: black;
             }
-        }
-        li {
-            display: inline;
         }
     }
 }
@@ -131,7 +130,7 @@ body {
             font-weight: 400;
             line-height: 34px;
         }
-        p{
+        p {
             padding-top: 20px;
         }
     }
@@ -151,7 +150,298 @@ body {
         background: var(--primary, #bf0f0f);
     }
 }
-.section3{
-    background-image: url(../img/truck.jpg);
+.section3 {
+    height: 620px;
+    background: linear-gradient(0deg, rgba(49, 56, 64, 0.47) 0%, rgba(49, 56, 64, 0.47) 100%),
+        url(../img/Semi-Truck-Backgrounds-HD.jpg), lightgray 40% / cover no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 32px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 10.4px;
+        padding-top: 300px;
+    }
+    img {
+        margin-left: 650px;
+        width: 150px;
+    }
+}
+
+.section4 {
+    .images {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3rem;
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .mainimg {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+            .line {
+                margin-top: 10px;
+                width: 10%;
+            }
+            h2 {
+                color: #474747;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+    .text {
+        padding: 60px;
+        height: 300px;
+        text-align: center;
+        h1 {
+            color: #303030;
+            text-align: center;
+            font-size: 42px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 34px;
+        }
+        h2 {
+            color: #474747;
+            text-align: center;
+            font-size: 28px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            padding: 20px;
+        }
+    }
+}
+.section5 {
+    background-image: url(../img/Rectangle\ 140.png);
+    height: 240px;
+    padding-top: 90px;
+    .numbers {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .number {
+            font-size: x-large;
+            color: white;
+            text-align: center;
+        }
+        img {
+            width: 1px;
+            height: 152px;
+        }
+    }
+}
+
+.section6 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: #f4f4f4;
+    width: 100%;
+
+    .product {
+        h2 {
+            flex-direction: column;
+            color: #474747;
+            text-align: center;
+            font-size: 28px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+            border-left: 20px;
+            padding: 50px;
+            margin-left: 450px;
+            margin-right: 450px;
+        }
+        p {
+            display: flex;
+            width: 524px;
+            height: 67px;
+            flex-direction: column;
+            color: #474747;
+            text-align: center;
+            font-size: 14px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-bottom: 30px;
+            padding-top: 50px;
+        }
+    }
+}
+
+.section7 {
+    padding: 40px;
+    h2 {
+        flex-direction: column;
+        color: #474747;
+        text-align: center;
+        font-size: 28px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+        margin-left: 450px;
+        margin-right: 450px;
+        padding: 50px;
+    }
+    .brands {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3rem;
+        .logoi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                color: #474747;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        height: 48px;
+        padding: 0px 16px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        margin-left: 640px;
+
+        background: var(--primary, #bf0f0f);
+    }
+}
+
+footer {
+    width: 100%;
+    height: 383px;
+    flex-shrink: 0;
+    background-image: url(../img/White-fur-rug-texture-patternpictures-1313\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer1 {
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: #fff;
+        padding: 40px;
+
+        .dvg {
+            color: #fff;
+            font-size: 28px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 34px;
+        }
+
+        .dvg-information {
+            display: flex;
+            width: 300px;
+            height: 12px;
+            flex-direction: column;
+            flex-shrink: 0;
+
+            p::before {
+                content: url(../img/Frameadress.png);
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            text-decoration-line: none;
+            li{
+                padding: 5px;
+            }
+            a {
+                color: #fff;
+            }
+            a:link {
+                text-decoration: none;
+            }
+        }
+    }
+    .footer2 {
+        height: 20%;
+        width: 100%;
+        background-blend-mode: multiply;
+        background: rgba(0, 0, 0, 0.33);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        .copyright {
+            color: rgba(255, 255, 255, 0.3);
+            text-align: center;
+            font-size: 14px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.99%;
+            letter-spacing: 0.42px;
+        }
+        a {
+            color: rgba(255, 255, 255, 0.5);
+            text-align: right;
+            font-size: 14px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.99%;
+            letter-spacing: 0.42px;
+            text-decoration-line: underline;
+        }
+        span{color: rgba(255, 255, 255, 0.30);
+            font-size: 14px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.99%;
+            letter-spacing: 0.42px;}
+    }
 }
