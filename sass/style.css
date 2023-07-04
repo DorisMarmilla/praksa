@@ -11,13 +11,144 @@ header {
 header .logo {
   display: flex;
   justify-content: space-between;
+  width: 218.857px;
+  height: 44.084px;
+  flex-shrink: 0;
+  padding-left: 105px;
 }
 header .nav1 {
   background-color: #d9d9d9;
   height: 75px;
 }
-header ul li {
-  color: rgb(136, 135, 135);
+header nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #888787;
+}
+header nav a .underline {
+  color: #595959;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+  padding-right: 105px;
+  padding-bottom: 26px;
+  align-items: center;
+  margin-top: 100px;
+}
+header nav ul li {
+  margin-right: 1em;
   list-style: none;
+  color: #888787;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+header nav ul .underline {
+  color: #595959;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-line: underline;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+.nav2 {
+  height: 60px;
+  justify-content: center;
+}
+.nav2 ul {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 104px;
+  margin-right: 104px;
+}
+.nav2 ul li {
+  color: wheat;
+  border-left: 1px solid grey;
+  padding-top: 10px;
+  display: inline-block;
+  padding-left: 40px;
+}
+.nav2 ul li a {
+  color: #595959;
+}
+.nav2 ul li span {
+  display: block;
+  font-size: 12px;
+  padding-bottom: 8px;
+  color: black;
+}
+.nav2 ul li {
   display: inline;
+}
+
+.secton1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  top: 136px;
+}
+.secton1 div .video {
+  width: 100%;
+  max-height: 100%;
+}
+
+.section2 {
+  display: block;
+  display: flex;
+  margin-right: 90px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 73px;
+}
+.section2 .company {
+  padding: 60px;
+  height: 237px;
+  margin-right: 100px;
+}
+.section2 .company h2 {
+  color: #474747;
+  font-size: 28px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+.section2 .company p {
+  padding-top: 20px;
+}
+.section2 button {
+  display: inline-flex;
+  height: 48px;
+  padding: 0px 16px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary, #bf0f0f);
+}
+
+.section3 {
+  background-image: url(../img/truck.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
