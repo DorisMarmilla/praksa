@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/style.css">
-   <script src="./script.js" defer></script>
+    <script src="./script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link
@@ -16,57 +16,77 @@
 </head>
 
 <body>
-
-    <header>
-        <nav class="nav1">
-            <div class="logo">
-                <img src="./img/logo.jpg" alt="">
-            </div>
-            <ul>
-                <li><a href="#">Serbian</a></li>
-                <li class="underline"><a href="#">English</a></li>
-                <li class="underline"><a href="#">Magyar</a></li>
-            </ul>
-        </nav>
-        <div class="nav2">
-            <ul>
-                <li class="listitem"><a href="#">O Nama</a>
-                    <span>vizija za uspeh</span>
-                </li>
-                <li class="listitem"><a href="#">DVG Proizvodi</a>
-                    <span>naši proizvodi</span>
-                </li>
-                <li class="listitem"><a href="#">BRENDOVI</a>
-                    <span>koje zastupamo</span>
-                </li>
-                <li class="listitem"><a href="#">DISTRIBUCIJA</a>
-                    <span>logistika i operativa</span>
-                </li>
-                <li class="listitem"><a href="#">SARADNJA</a>
-                    <span>proširenje ponude</span>
-                </li>
-                <li class="listitem"><a href="#">NOVOSTI</a>
-                    <span>aktuelnosti</span>
-                </li>
-                <li class="listitem"><a href="#">KONTAKT</a>
-                    <span>kontaktirajte nas</span>
-                </li>
-            </ul>
+    <div class="wrapperr">
+        <img src="./img/cookies-clipart-8.jpg" alt="">
+        <div class="content">
+          <header>Cookies Consent</header>
+          <p>This website use cookies to ensure you get the best experience on our website.</p>
+          <div class="buttons">
+            <button class="item">I understand</button>
+            <a href="#" class="item">Learn more</a>
+          </div>
         </div>
+    </div>
+    <header>
+    <nav class="nav1">
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Serbian</a></li>
+            <li class="underline"><a href="#">English</a></li>
+            <li class="underline"><a href="#">Magyar</a></li>
+            <li> <button class="darkbtn" onclick="myFunction()">D/L</button></li>
+        </ul>
+    </nav>
+    <div class="nav2">
+        <ul>
+            <li class="listitem"><a href="#">O Nama</a>
+                <span>vizija za uspeh</span>
+            </li>
+            <li class="listitem"><a href="#">DVG Proizvodi</a>
+                <span>naši proizvodi</span>
+            </li>
+            <li class="listitem"><a href="#">BRENDOVI</a>
+                <span>koje zastupamo</span>
+            </li>
+            <li class="listitem"><a href="#">DISTRIBUCIJA</a>
+                <span>logistika i operativa</span>
+            </li>
+            <li class="listitem"><a href="#">SARADNJA</a>
+                <span>proširenje ponude</span>
+            </li>
+            <li class="listitem"><a href="#">NOVOSTI</a>
+                <span>aktuelnosti</span>
+            </li>
+            <li class="listitem"><a href="#">KONTAKT</a>
+                <span>kontaktirajte nas</span>
+            </li>
+        </ul>
+      
+
+    </div>
     </header>
+    </div>
     <main>
         <section class="secton1">
-            <div>
-                <img class="video" src="./img/Video.jpg" alt="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../company.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../dvg.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../dvg_company.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
         <section class="section2">
             <img src="./img/Rectangle 124.png" alt="">
             <div class="company">
                 <h1>DVG Company</h1>
-                <img src="./img/Rectangle 126.png" alt="">
+                <img class="line" src="./img/Rectangle 126.png" alt="">
                 <h2>Veleprodaja i maloprodaja kozmetike i kućne hemija</h2>
-                <img src="./img/Rectangle 127.png" alt="">
+                <img class="line" src="./img/Rectangle 127.png" alt="">
                 <p>DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici.
                     Prvenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije.
                     U potpunosti je u privatnom vlasništvu, sa sedištem u Subotici. Tu se nalazi distrubutivni centar i
@@ -147,7 +167,7 @@
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
             </div>
-            
+
 
         </section>
 
@@ -186,7 +206,7 @@
     </main>
     <footer>
         <div class="footer1">
-            <div> <img src="./img/Frame.png" alt=""></div>
+            <div> <img class="logo2" src="./img/Frame.png" alt=""></div>
             <div class="company">
                 <p class="dvg">D.V.G. COMPANY</p>
                 <p class="dvg-information1"> <img src="./img/Frameadress.png" alt=""> Čantavirski put bb <br>
@@ -225,6 +245,7 @@
             <span>Powered by: <a href="">StudioPresent</a></span>
         </div>
     </footer>
+
 
 </body>
 
