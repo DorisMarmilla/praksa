@@ -4,26 +4,89 @@
   box-sizing: border-box;
 }
 
-.wrapperr {
+.topnav {
+  display: none;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  max-width: 365px;
-  background: wheat;
-  padding: 25px 25px 30px 25px;
-  border-radius: 15px;
-  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #303030;
+  color: black;
+}
+
+#modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 450px;
   text-align: center;
-  visibility: hidden;
+  padding: 80px 60px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: gray;
+  border-radius: 8px;
+  display: none;
+  z-index: 3;
 }
-.wrapperr img {
-  width: 40%;
+#modalbox .close-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
 }
-.wrapperr button {
-  background-color: wheat;
-  border: solid brown;
-  padding: 5px;
-  border-radius: 10px;
+#modalbox button {
+  background: #bf0f0f;
+  color: wheat;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+#modalbox .cookie {
+  width: 100px;
+  margin-bottom: 15px;
 }
 
 header {
@@ -83,6 +146,7 @@ header nav ul .underline {
 body {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .nav2 {
@@ -119,7 +183,7 @@ body {
   margin-right: auto;
   left: 0px;
   top: 130px;
-  height: 900px;
+  height: 700px;
 }
 
 .swiper {
@@ -154,8 +218,8 @@ body {
 }
 .section2 .company {
   padding: 60px;
-  height: 237px;
-  margin-right: 100px;
+  height: 270px;
+  margin-right: 10px;
 }
 .section2 .company h2 {
   color: #474747;
@@ -407,11 +471,14 @@ footer .footer1 {
   color: #fff;
   padding: 40px;
 }
-footer .footer1 .logo2 {
+footer .footer1 .dvginformation2 a {
+  color: #fff;
+}
+footer .logo2 {
   width: 80px;
   height: 80px;
 }
-footer .footer1 .dvg {
+footer .dvg {
   color: #fff;
   font-size: 28px;
   font-family: "Inter", sans-serif;
@@ -419,25 +486,25 @@ footer .footer1 .dvg {
   font-weight: 700;
   line-height: 34px;
 }
-footer .footer1 .dvg-information {
+footer .dvg-information {
   display: flex;
   width: 300px;
   height: 12px;
   flex-direction: column;
   flex-shrink: 0;
 }
-footer .footer1 .dvg-information img {
+footer .dvg-information img {
   width: 20px;
   height: 20px;
 }
-footer .footer1 ul {
+footer ul {
   list-style: none;
   text-decoration-line: none;
 }
-footer .footer1 ul li {
+footer ul li {
   padding: 5px;
 }
-footer .footer1 ul a {
+footer ul a {
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -446,10 +513,10 @@ footer .footer1 ul a {
   font-weight: 400;
   line-height: 26px;
 }
-footer .footer1 ul a:link {
+footer ul a:link {
   text-decoration: none;
 }
-footer .footer1 .social p {
+footer .social p {
   color: #fff;
   text-align: start;
   font-size: 14px;
@@ -458,11 +525,13 @@ footer .footer1 .social p {
   font-weight: 400;
   line-height: 26px;
 }
-footer .social_icons {
+
+.social_icons {
   display: flex;
   align-items: start;
 }
-footer .footer2 {
+
+.footer2 {
   height: 20%;
   width: 100%;
   background-blend-mode: multiply;
@@ -473,7 +542,7 @@ footer .footer2 {
   padding-left: 5px;
   padding-right: 5px;
 }
-footer .footer2 .copyright {
+.footer2 .copyright {
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
   font-size: 14px;
@@ -483,7 +552,7 @@ footer .footer2 .copyright {
   line-height: 137.99%;
   letter-spacing: 0.42px;
 }
-footer .footer2 a {
+.footer2 a {
   color: rgba(255, 255, 255, 0.5);
   text-align: right;
   font-size: 14px;
@@ -494,7 +563,7 @@ footer .footer2 a {
   letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
-footer .footer2 span {
+.footer2 span {
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -524,31 +593,71 @@ footer .footer2 span {
   font-size: small;
 }
 
-#hamburger-menu {
-  width: 50px;
-  height: 50px;
-  display: block;
-  border: none;
-  padding: 0px;
-  margin: 20px;
-  background: linear-gradient(to bottom, #3d0e61, #3d0e61 20%, white 20%, white 40%, #3d0e61 40%, #3d0e61 60%, white 60%, white 80%, #3d0e61 80%, #3d0e61 100%);
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-#hamburger-menu #sidebar-menu {
-  visibility: hidden;
-  position: fixed;
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
   top: 0;
-  left: -250px;
-  width: 200px;
-  height: 100%;
-  background-color: #3d0e61;
-  padding: 0px 10px;
-  box-sizing: border-box;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #bf0f0f;
+  color: white;
 }
 
 @media screen and (max-width: 360px) {
   body {
     width: 400px;
+  }
+  .topnav {
+    display: inline;
+  }
+  .topnav a {
+    color: #bf0f0f;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
   .nav1 .logo img {
     width: 120px;
@@ -565,21 +674,9 @@ footer .footer2 span {
     visibility: hidden;
   }
   .nav2 {
-    visibility: hidden;
-  }
-  .nav2 #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
-    background-color: #3d0e61;
-    padding: 0px 10px;
-    box-sizing: border-box;
+    display: none;
   }
   .section2 {
-    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     height: 900px;

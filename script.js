@@ -32,21 +32,30 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-myButton.addEventListener("click", function () {
-    myPopup.classList.add("show");
-});
-closePopup.addEventListener("click", function () {
-    myPopup.classList.remove("show");
-});
-window.addEventListener("click", function (event) {
-    if (event.target == myPopup) {
-        myPopup.classList.remove("show");
-    }
-});
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+let modalbox = document.getElementById("modalbox");
+function showModal() {
+    setTimeout(() => {
+        modalbox.style.display = "block";
+    }, 3000)
 }
 
+function closeModal() {
+    modalbox.style.display = "none";
+}
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+var icon = document.getElementById("icon");
+
+function myFunction2() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
 

@@ -13,68 +13,80 @@
         rel="stylesheet">
     <title>SP</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <div class="wrapperr">
-        <img src="./img/cookies-clipart-8.jpg" alt="">
-        <div class="content">
-          <header>Cookies Consent</header>
-          <p>This website use cookies to ensure you get the best experience on our website.</p>
-          <div class="buttons">
-            <button class="item">I understand</button>
-            <a href="#" class="item">Learn more</a>
-          </div>
-        </div>
+<body onload="showModal()">
+
+    <div id="modalbox">
+        <img src="./img/cookies-clipart-8.jpg" class="cookie" alt="">
+        <p> We use cookies to optimize user experiance and content.</p>
+        <button type="button" onclick="closeModal()">Accept</button>
+        <img src="./img/arrow-down-circle.png" class="close-icon" onclick="closeModal()" alt="">
     </div>
     <header>
-    <nav class="nav1">
-        <div class="logo">
-            <img src="./img/logo.jpg" alt="">
-        </div>
-        <ul>
-            <li><a href="#">Serbian</a></li>
-            <li class="underline"><a href="#">English</a></li>
-            <li class="underline"><a href="#">Magyar</a></li>
-            <li> <button class="darkbtn" onclick="myFunction()">D/L</button></li>
-        </ul>
-    </nav>
-    <div class="nav2">
-        <ul>
-            <li class="listitem"><a href="#">O Nama</a>
-                <span>vizija za uspeh</span>
-            </li>
-            <li class="listitem"><a href="#">DVG Proizvodi</a>
-                <span>naši proizvodi</span>
-            </li>
-            <li class="listitem"><a href="#">BRENDOVI</a>
-                <span>koje zastupamo</span>
-            </li>
-            <li class="listitem"><a href="#">DISTRIBUCIJA</a>
-                <span>logistika i operativa</span>
-            </li>
-            <li class="listitem"><a href="#">SARADNJA</a>
-                <span>proširenje ponude</span>
-            </li>
-            <li class="listitem"><a href="#">NOVOSTI</a>
-                <span>aktuelnosti</span>
-            </li>
-            <li class="listitem"><a href="#">KONTAKT</a>
-                <span>kontaktirajte nas</span>
-            </li>
-        </ul>
-      
+       
+            <nav class="nav1">
+                <div class="logo">
+                    <img src="./img/logo.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Serbian</a></li>
+                    <li class="underline"><a href="#">English</a></li>
+                    <li class="underline"><a href="#">Magyar</a></li>
+                    <li> <button class="darkbtn" onclick="myFunction2()">D/L</button></li>
+                </ul>
+            </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active"></a>
+                <a href="#news">O nama</a>
+                <a href="#contact">DVG Proizvodi</a>
+                <a href="#about">Brendovi</a>
+                <a href="#about">Distribucija</a>
+                <a href="#about">Saradnja</a>
+                <a href="#about">Novosti</a>
+                <a href="#about">Kontakt</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            <div class="nav2">
+                
+                <ul>
+                    <li class="listitem"><a href="#">O Nama</a>
+                        <span>vizija za uspeh</span>
+                    </li>
+                    <li class="listitem"><a href="#">DVG Proizvodi</a>
+                        <span>naši proizvodi</span>
+                    </li>
+                    <li class="listitem"><a href="#">BRENDOVI</a>
+                        <span>koje zastupamo</span>
+                    </li>
+                    <li class="listitem"><a href="#">DISTRIBUCIJA</a>
+                        <span>logistika i operativa</span>
+                    </li>
+                    <li class="listitem"><a href="#">SARADNJA</a>
+                        <span>proširenje ponude</span>
+                    </li>
+                    <li class="listitem"><a href="#">NOVOSTI</a>
+                        <span>aktuelnosti</span>
+                    </li>
+                    <li class="listitem"><a href="#">KONTAKT</a>
+                        <span>kontaktirajte nas</span>
+                    </li>
+                </ul>
 
-    </div>
+
+            </div>
     </header>
     </div>
     <main>
         <section class="secton1">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../company.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="../dvg.jpeg" alt=""></div>
-                    <div class="swiper-slide"><img src="../dvg_company.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/makeup.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/van.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/Semi-Truck-Backgrounds-HD.jpg" alt=""></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -154,7 +166,7 @@
                     smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</p>
             </div>
             <div class="wrapper">
-                <i class="fa-solid fa-angle-left"></i>
+                
                 <div class="carousel">
                     <img src="./img/61olaplexbon7.jpg" alt="">
                     <img src="./img/maroco.jpg" alt="">
@@ -165,7 +177,7 @@
                     <img src="./img/shower.jpg" alt="">
                     <img src="./img/fenty.jpg" alt="">
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
+                
             </div>
 
 
